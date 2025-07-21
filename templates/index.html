@@ -6,6 +6,11 @@
 </head>
 <body>
     <h1>商品清單</h1>
+    <nav>
+        <a href="/users">使用者列表</a> |
+        <a href="/register">註冊</a> |
+        <a href="/login">登入</a>
+    </nav>
     <ul>
     {% for product in products %}
         <li>{{ product.name }} - ${{ product.price }} - 庫存: {{ product.stock }}</li>
