@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <title>使用者列表</title>
+</head>
+<body>
+    <h1>使用者列表</h1>
+    <nav>
+        <a href="/">回到首頁</a>
+    </nav>
+    <ul>
+    {% for user in users %}
+        <li>{{ user.username }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
